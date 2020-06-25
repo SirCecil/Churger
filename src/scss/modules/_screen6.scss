@@ -1,0 +1,61 @@
+.screen6 {
+  position: relative;
+  z-index: 2;
+  background-color: #f0f0f0;
+}
+.singUp {
+  margin: 48px 0;
+		// .singUp__text
+
+		&__text {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 1;
+		}
+
+		// .singUp__form
+
+		&__form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+		}
+
+		// .singUp__inp
+
+		&__inp {
+      padding: 14.5px;
+      border-width: 2px 1px 1px 2px;
+      border-color: $accentColor;
+      border-style: solid;
+      flex: 0 0 74%;
+      &::placeholder{
+      color: $accentColor;
+      font-family: MyriadPro-R;
+      }
+		}
+
+		// .singUp__btn
+
+		&__btn {
+      padding: 12px 0;
+      background-color: #000;
+      color: $accentColor;
+      flex: 0 0 23.3%;
+		}
+}
+@media screen and (max-width: $phoneWidth) {
+  .singUp__form{
+    flex-direction: column;
+  }
+  .singUp__inp{
+    margin-bottom: 15px;
+  }
+  .singUp{
+    margin: 30px 0;
+  }
+  .singUp__text{
+    font-size: 17px;
+  }
+}

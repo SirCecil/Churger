@@ -1,0 +1,9 @@
+@import "mixins";
+
+@include font-face (HelveticaNeue-T, '../fonts/HelveticaNeue/HelveticaNeue-Thin', 100, normal);
+@include font-face (HelveticaNeue-L, '../fonts/HelveticaNeue/HelveticaNeue-Light', 300, normal);
+@include font-face (HelveticaNeue-R, '../fonts/HelveticaNeue/HelveticaNeue-Regular', 400, normal);
+@include font-face (LucidaGrande, '../fonts/LucidaGrande/LucidaGrande', 400, normal);
+@include font-face (MyriadPro-R, '../fonts/MyriadPro/MyriadPro-Regular', 400, normal);
+@include font-face (MyriadPro-Sb, '../fonts/MyriadPro/MyriadPro-Semibold', 600, normal);
+@include font-face (SFCompactText, '../fonts/SFCompactText/SFCompactText-Semibold', 600, normal);

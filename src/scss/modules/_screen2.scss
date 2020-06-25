@@ -1,0 +1,120 @@
+.screen2 {
+  background-color: #f0f0f0;
+  // .screen2__wrapper
+
+  &__wrapper {
+    display: flex;
+  }
+
+  // .screen2__phone
+
+  &__phone {
+    z-index: 1;
+    transform: rotate(-35deg);
+    position: absolute;
+    width: 225px;
+
+    // .screen2__phone-bl
+
+    &-bl {
+      flex: 0 0 60%;
+    }
+
+    // .screen2__phone-img
+
+    &-img {
+    }
+  }
+
+  // .screen2__phone_white
+
+  &__phone_white {
+    top: 200px;
+    left: 62px;
+  }
+
+  // .screen2__phone_black
+
+  &__phone_black {
+    top: -25px;
+    left: 205px;
+  }
+
+  // .screen2__card
+
+  &__card {
+    margin-top: 125px;
+    margin-bottom: 40px;
+    flex: 0 1 40%;
+  }
+}
+.screen2__simpleCard {
+  margin-bottom: 35px;
+}
+.simpleCard {
+  // .simpleCard__heading
+
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  // .simpleCard__img
+
+  &__img {
+    // .simpleCard__img-bl
+
+    &-bl {
+      margin-right: 30px;
+    }
+  }
+
+  // .simpleCard__title
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.4;
+    color: $accentColor;
+  }
+
+  // .simpleCard__subtitle
+
+  &__subtitle {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: $smDesktopWidth) {
+  .screen2__phone{
+    width: 180px;
+  }
+  .screen2__phone_black{
+    left: 150px;
+  }
+  .screen2__phone_white{
+    left: 80px;
+  }
+}
+@media screen and (max-width: $tableWidth) {
+  .screen2__phone-bl{
+    display: none;
+  }
+  .screen2__card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .screen2__simpleCard{
+    margin-bottom: 0;
+    flex: 0 1 48%;
+  }
+}
+@media screen and (max-width: 653px) {
+  .screen2__card {
+    flex-direction: column;    
+  }
+  .screen2__simpleCard{
+    margin-bottom: 20px;
+  }
+}

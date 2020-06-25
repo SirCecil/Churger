@@ -1,0 +1,91 @@
+.screen4 {
+  background-color: #000000;
+
+  // .screen4__wrapper
+
+  &__wrapper {
+  }
+
+  // .screen4__headeing
+
+  &__headeing {
+    text-align: center;
+    margin-top: 72px;
+  }
+
+  // .screen4__title
+
+  &__title {
+    @include adaptiv-font(24, 16);
+    line-height: 1.4;
+    color: $default-color;
+
+    // .screen4__title-sub
+
+    &-sub {
+      @include adaptiv-font(36, 24);
+      margin-bottom: 50px;
+      display: block;
+      color: $accentColor;
+    }
+  }
+}
+.screen4 {
+  // .screen4__carousel
+
+  &__carousel {
+    display: flex;
+    align-items: start;
+
+    // .screen4__carousel-item
+
+    &-item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // .screen4__item
+
+  &__item {
+    // .screen4__item-img
+
+    &-img {
+      width: 190px;
+    }
+  }
+}
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+.slick-list {
+  overflow: hidden;
+  margin: 0 0 0 -30px;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  margin-bottom: 96px;
+}
+/* Слайд */
+.slick-slide {
+  cursor: pointer;
+  margin-right: 5px;
+}
+@media screen and (max-width: $smDesktopWidth) {
+  .screen4__item-img{
+    width: 150px;
+  }
+  .slick-track{
+    margin-bottom: 45px;
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  .slick-list {
+    margin: 0;
+    .slick-slide{
+      margin: 0 5px;
+    }
+  }
+}

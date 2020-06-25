@@ -1,0 +1,122 @@
+.screen5 {
+  background-size: cover;
+  background-position: center center;
+  background-color: $accentColor;
+  // .screen5__wrapper
+
+  &__wrapper {
+    display: flex;
+  }
+
+  // .screen5__content
+
+  &__content {
+    margin: 72px 0 0 0;
+    flex: 0 1 50%;
+  }
+
+  // .screen5__title
+
+  &__title {
+    color: $default-color;
+  }
+
+  // .screen5__check
+
+  &__check {
+    margin: 35px 0;
+    // .screen5__check-item
+
+    &-item {
+      margin-bottom: 12px;
+      color: $default-color;
+      display: flex;
+      align-items: center;
+    }
+
+    // .screen5__check-icoBl
+
+    &-icoBl {
+      flex: 0 0 55px;
+      margin-right: 30px;
+    }
+
+    // .screen5__check-ico
+
+
+
+    // .screen5__check-text
+
+    &-text {
+      flex: 0 1 300px;
+      font-size: 24px;
+      line-height: 1;
+    }
+  }
+
+  // .screen5__phone
+
+  &__phone {
+    flex: 0 1 50%;
+
+    // .screen5__phone-container
+
+    &-container {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      right: -75px;
+      top: 55px;
+    }
+
+    // .screen5__phone-img
+
+  }
+}
+@media screen and (max-width: 1150px) {
+  .screen5__phone-container{
+    top: 130px;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 851px) {
+  .screen5__wrapper{
+    justify-content: space-between;
+  }
+  .screen5__phone{
+    flex: 0 1 35%;
+  }
+  .screen5__phone-container{
+    width: 300px;
+    top: 250px;
+    margin: 0 0 0 auto;
+  }
+  .screen5__content{
+    flex: 0 1 60%;
+  }
+}
+@media screen and (max-width: $tableWidth) {
+  .screen5__phone{
+    display: none;
+  }
+  .screen5__content{
+    flex: 0 1 100%;
+  }
+  .screen5__check-text{
+    flex: 0 1 100%;
+  }
+.screen5__subtitle{
+  max-width: 70%;
+}
+}
+@media screen and (max-width: $phoneWidth) {
+  .screen5__subtitle{
+    max-width: none;
+  }
+  .screen5__content{
+    margin: 20px 0 0 0;
+  }
+  .screen5__check{
+    margin-top: 15px;
+  }
+}
